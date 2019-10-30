@@ -19,7 +19,7 @@ class Search extends React.Component {
         <input
           type='text'
           ref='filterInput'
-          placeholder='Type to filter..'
+          placeholder='Type to filter by name..'
 					value={filterVal}
           onChange={() => {
            filterUpdate(this.refs.filterInput.value)

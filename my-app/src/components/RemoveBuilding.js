@@ -7,7 +7,7 @@ class RemoveBuilding extends React.Component {
 		let code = this.state.code;
 		let data = this.props.data;
 		let res = data.filter(obj => { // See if code is in list
-		  return obj['code'] === code
+		  return obj['code'].toLowerCase() === code.toLowerCase();
 		});
 
 		if(res.length === 0) { // Code doesn't exist
@@ -15,7 +15,7 @@ class RemoveBuilding extends React.Component {
 		} else { // Code exists -> delete
 			alert("You are removing " + res[0]["name"]);
 			let index = data.findIndex(obj => {
-			  return obj['code'] === code
+			  return obj['code'] === code;
 			});
 			data.splice(index, 1);
 		}
@@ -44,6 +44,7 @@ class RemoveBuilding extends React.Component {
 					</div>
 					<input
 						type='submit'
+						required
 					/>
 				</form>
 			</div>

@@ -37,6 +37,7 @@ class AddBuilding extends React.Component {
 			      <input
 			        type='text'
 							name='name'
+							required
 			        onChange={this.myChangeHandler}
 			      />
 					</div>
@@ -45,6 +46,7 @@ class AddBuilding extends React.Component {
 			      <input
 			        type='text'
 							name='code'
+							required
 			        onChange={this.myChangeHandler}
 			      />
 					</div>
@@ -53,6 +55,7 @@ class AddBuilding extends React.Component {
 			      <input
 			        type='text'
 							name='address'
+							required
 			        onChange={this.myChangeHandler}
 			      />
 					</div>
