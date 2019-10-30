@@ -29,22 +29,25 @@ class RemoveBuilding extends React.Component {
 
 	render() {
 		return (
-			<form onSubmit={this.mySubmitHandler}>
-	      <h3>Remove Building</h3>
-				<div class="row">
-				<div class="row">
-					<p>Enter place code:</p>
-		      <input
-		        type='text'
-						name='code'
-		        onChange={this.myChangeHandler}
-		      />
-				</div>
-				</div>
-				<input
-	        type='submit'
-	      />
-      </form>
+			<div className="card">
+				<form onSubmit={this.mySubmitHandler}>
+					<h3>Remove Building</h3>
+					<div class="row">
+					<div class="row">
+						<p>Enter place code:</p>
+						<input
+							type='text'
+							name='code'
+							onChange={this.myChangeHandler}
+						/>
+					</div>
+					</div>
+					<input
+						type='submit'
+					/>
+				</form>
+			</div>
+
 		);
 	}
 }

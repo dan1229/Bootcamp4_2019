@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	background: #db3de3;
 }
 
 /* ##### general ##### */
@@ -44,7 +45,7 @@ th {
 td:hover {
 	position: left;
 	cursor: pointer;
-	background-color: #ddd;
+	background-color: #ff9900;
 }
 
 /* ##### Columns ##### */
@@ -52,12 +53,13 @@ td:hover {
 	float: left;
 	width: 50%;
 	padding: 10px;
+	background: #000000;
 }
 .column2 {
 	float: left;
 	width: 50%;
 	padding: 20px;
-	background-color: #ccdef9;
+	background-color: #26cbde;
 }
 
 /* ##### Rows ##### */
@@ -86,7 +88,28 @@ td:hover {
 .credit a {
 	color: #3498bb;
 }
-button {
+
+.listing {
+	color: #ffffff;
+	margin: 8px;
+	background-color: #b341e0;
+	padding: 8px;
+	border-radius: 30px;
+	box-shadow: 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Header-darkbg {
+	margin: 40px;
+	color: #ffffff;
+}
+
+input[type=text] {
+	background: #ff9900;
+	height: 2rem;
+	border-radius: 30px;
+}
+
+input[type=submit] {
 	background: #d7d7d7;
 	color: #3b3b3b;
 	padding: 0.6rem 1rem;
@@ -97,6 +120,27 @@ button {
 	border-radius: 3px;
 	outline: none;
 }
-button:hover {
+
+input[type=submit]:hover {
 	background: #ddd;
+}
+
+
+hr {
+	display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+	color: #FFFFFF !important;
+}
+
+.card {
+	margin: 20px;
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 30px;
+	box-shadow: 5px 10px rgba(0, 0, 0, 0.25);
 }

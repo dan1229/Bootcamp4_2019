@@ -29,36 +29,38 @@ class AddBuilding extends React.Component {
 
 	render() {
 		return (
-			<form onSubmit={this.mySubmitHandler}>
-	      <h3>Add Building</h3>
-				<div class="row">
-					<p>Enter place name:</p>
-		      <input
-		        type='text'
-						name='name'
-		        onChange={this.myChangeHandler}
+			<div className="card">
+				<form onSubmit={this.mySubmitHandler}>
+		      <h3>Add Building</h3>
+					<div class="row">
+						<p>Enter place name:</p>
+			      <input
+			        type='text'
+							name='name'
+			        onChange={this.myChangeHandler}
+			      />
+					</div>
+					<div class="row">
+						<p>Enter place code:</p>
+			      <input
+			        type='text'
+							name='code'
+			        onChange={this.myChangeHandler}
+			      />
+					</div>
+					<div class="row">
+						<p>Enter place address:</p>
+			      <input
+			        type='text'
+							name='address'
+			        onChange={this.myChangeHandler}
+			      />
+					</div>
+					<input
+		        type='submit'
 		      />
-				</div>
-				<div class="row">
-					<p>Enter place code:</p>
-		      <input
-		        type='text'
-						name='code'
-		        onChange={this.myChangeHandler}
-		      />
-				</div>
-				<div class="row">
-					<p>Enter place address:</p>
-		      <input
-		        type='text'
-						name='address'
-		        onChange={this.myChangeHandler}
-		      />
-				</div>
-				<input
-	        type='submit'
-	      />
-      </form>
+	      </form>
+			</div>
 		);
 	}
 }

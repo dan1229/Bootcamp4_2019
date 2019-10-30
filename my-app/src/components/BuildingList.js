@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../index.css';
 
 class BuilingList extends React.Component {
 
@@ -14,13 +15,16 @@ class BuilingList extends React.Component {
 		var input = filter.toLowerCase();
 
 		const buildingList = data.filter((building, i) => {
+				// Filter by name
 				var name = data[i].name.toLowerCase();
 				return (name.indexOf(input) !== -1);
-	    }).map(directory => {
+	    }).map(listing => {
 			return (
-				<tr key={directory.id} >
-					<td>{directory.code} </td>
-					<td onClick={()=>this.tappedBuilding(directory)}> {directory.name} </td>
+				<tr key={listing.id} >
+					<div className="listing">
+						<td>{listing.code} </td>
+						<td onClick={()=>this.tappedBuilding(listing)}> {listing.name} </td>
+					</div>
 				</tr>
 			);
 		});

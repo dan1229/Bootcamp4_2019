@@ -47,7 +47,7 @@ class App extends React.Component {
             <div className="column1">
               <div className="tableWrapper">
                 <table className="table table-striped table-hover">
-                  <tr>
+                  <tr className="Header-darkbg">
                     <td>
                       <b>Code Building</b>
                     </td>
@@ -61,13 +61,15 @@ class App extends React.Component {
               </div>
             </div>
             <div className="column2">
-              <ViewBuilding
+              <ViewBuilding className="card"
                 data={this.props.data}
                 building={this.state.selectedBuilding}
               />
+              <hr/>
               <AddBuilding
                 data={this.props.data}
               />
+              <hr/>
               <RemoveBuilding
                 data={this.props.data}
               />
